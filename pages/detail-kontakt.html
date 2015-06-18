@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drnek piana - CRM</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../dist/css/timeline.css" rel="stylesheet">
+
+
+    <!-- DataTables CSS -->
+    <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Customize CSS -->
+    <link href="../dist/css/customize.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Drnek piana - CRM</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 2</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 3</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 4</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="upozorneni.html"><i class="fa fa-wrench fa-fw"></i> Upozornění</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap-o fa-fw"></i> Uživatelé<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+
+                                <li>
+                                    <a href="kontakty.html">Kontakty</a>
+                                </li>
+                                <li>
+                                    <a href="osoby.html">Kontaktní osoby</a>
+                                </li>
+                                <li>
+                                    <a href="prava.html">Práva</a>
+                                </li>
+                                <li>
+                                    <a href="icons.html">Uživatelé</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="newsletter.html"><i class="fa fa-edit fa-fw"></i> Newsletter</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">ZUŠ Drozdeckého</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab"><i class="fa  fa-list-alt  fa-fw"></i>Základní informace</a>
+                                </li>
+                                <li><a href="#profile" data-toggle="tab"><i class="fa fa-users fa-fw fa-tabs"></i>Kontaktní osoby</a>
+                                </li>
+                                <li><a href="#messages" data-toggle="tab"><i class="fa fa-comments fa-fw fa-tabs"></i>Historie komunikace</a>
+                                </li>
+                                <li><a href="#instruments" data-toggle="tab"><i class="fa fa-music fa-fw fa-tabs"></i>Nástroje</a>
+                                </li>
+                                <li><a href="#contracts" data-toggle="tab"><i class="fa fa-file-o fa-fw fa-tabs"></i>Smlouvy</a>
+                                </li>
+                                <li><a href="#complaint" data-toggle="tab"><i class="fa  fa-exclamation-circle fa-fw fa-tabs"></i>Reklamace</a>
+                                </li>
+                                <li><a href="#commission" data-toggle="tab"><i class="fa  fa-euro fa-fw fa-tabs"></i>Provize</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="home">
+                                    <h4><i class="fa  fa-list-alt  fa-fw"></i>Základní informace</h4>
+
+                                        <div class="well">
+                                            <div class="row p-bold">
+
+                                            <div class="col-lg-4">
+                                                <p><span>IČ:</span> 28399456</p>
+                                                <p><span>DIČ:</span> CZ28399456</p>
+                                                <p><span>B.ú.:</span> 492560267/0100</p>
+                                                <p><span>Typ:</span> odběratelé, spolupracovníci</p>
+                                                <p><span>Kategorie:</span> ZŠ</p>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <p><span>Ulice:</span> Melicharova 25</p>
+                                                <p><span>Město:</span> Brno</p>
+                                                <p><span>PSČ:</span> 255 04</p>
+                                                <p><span>Stát:</span> CZ</p>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <p><span>Telefon:</span>+420 554 675 344</p>
+                                                <p><span>Mobil:</span>+420 605 867 235</p>
+                                                <p><span>Fax:</span>+420 554 675 344</p>
+                                                <p><span>Email:</span> reditelka@zusdrozdeckeho.cz</p>
+                                                <p><span>Web:</span> www.zusdrozdeckeho.cz</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="well">
+                                                <h4>Poznámka</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                                            </div>
+                                        </div>
+                                        <!-- /.col-lg-12 -->
+                                    </div>
+                                    <p><a href="form-zakladni-informace.html"><button type="button" class="btn btn-outline btn-primary">Editovat</button></a></p>
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+                                    <h4><i class="fa fa-users fa-fw"></i>Kontaktní osoby</h4>
+
+                                        <p><a href="form-kontaktni-osoba.html"><button type="button" class="btn btn-outline btn-primary">Nová kontaktní osoba</button></a></p>
+
+
+                                    <div class="row p-bold">
+                                        <div class="col-lg-4">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4><i class="fa fa-user fa-fw"></i>Jan Suchý</h4>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p><span>Pozice:</span>Manažer nákupu</p>
+                                                    <p><span>Telefon:</span>+420 554 675 344</p>
+                                                    <p><span>Mobil:</span>+420 605 867 235</p>
+                                                    <p><span>Fax:</span>+420 554 675 344</p>
+                                                    <p><span>Email:</span><a href="mailto:jan@suchy.cz">jan@suchy.cz</a></p>
+                                                    <p><span>B.ú.:</span> 492560267/0100</p>
+                                                    <p><span>Provize celkem:</span> 0,- Kč</p>
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                                    <h4 class="modal-title" id="myModalLabel">Provize - Jan Suchý </h4>
+                                                                </div>
+                                                                <div class="modal-body">
+
+
+                                                                    <!-- /.panel-heading -->
+                                                                    <div class="panel-body">
+                                                                        <div class="table-responsive">
+                                                                            <table class="table table-hover">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                    <th>Datum</th>
+                                                                                    <th>Částka</th>
+                                                                                    <th>Důvod provize</th>
+                                                                                    <th>Akce</th>
+                                                                                </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td>25.5.2015</td>
+                                                                                    <td> 1.200,- Kč</td>
+                                                                                    <td>zprostředkování prodeje pianino Scholze 1960</td>
+                                                                                    <td><button type="button" class="btn btn-outline btn-danger btn-xs">Smazat</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>25.5.2015</td>
+                                                                                    <td> 1.200,- Kč</td>
+                                                                                    <td>zprostředkování prodeje křídlo Petrof</td>
+                                                                                    <td><button type="button" class="btn btn-outline btn-danger btn-xs">Smazat</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>25.5.2015</td>
+                                                                                    <td> 1.200,- Kč</td>
+                                                                                    <td>zprostředkování prodeje křídlo Steinway-son</td>
+                                                                                    <td><button type="button" class="btn btn-outline btn-danger btn-xs">Smazat</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><strong>celkem</strong></td>
+                                                                                    <td colspan="3"><strong>3.600,-Kč</strong></td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <!-- /.table-responsive -->
+
+                                                                        <form role="form">
+                                                                            <h4>Nová provize</h4>
+                                                                            <div class="row">
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="form-group input-group">
+                                                                                        <span class="input-group-addon"><i class="fa fa-dollar"></i>
+                                                                                        </span>
+                                                                                        <input type="text" class="form-control" placeholder="Částka">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-9">
+                                                                                    <div class="form-group">
+                                                                                        <input class="form-control" placeholder="Důvod">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <!-- /.panel-body -->
+
+
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+                                                                    <button type="button" class="btn btn-primary">Uložit změny</button>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.modal-content -->
+                                                        </div>
+                                                        <!-- /.modal-dialog -->
+                                                    </div>
+                                                    <!-- /.modal -->
+                                                    <!-- Button trigger modal -->
+                                                    <button class="btn btn-primary btn-outline" data-toggle="modal" data-target="#myModal">
+                                                        Provize
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline btn-default">Editovat</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.col-lg-4 -->
+                                        <div class="col-lg-4">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4><i class="fa fa-user fa-fw"></i>Jan Suchý</h4>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p><span>Pozice:</span>Manažer nákupu</p>
+                                                    <p><span>Telefon:</span>+420 554 675 344</p>
+                                                    <p><span>Mobil:</span>+420 605 867 235</p>
+                                                    <p><span>Fax:</span>+420 554 675 344</p>
+                                                    <p><span>Email:</span><a href="mailto:jan@suchy.cz">jan@suchy.cz</a></p>
+                                                    <p><span>B.ú.:</span> 492560267/0100</p>
+                                                    <p><span>Provize celkem:</span> 12.200,- Kč</p>
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <p>
+                                                        <button type="button" class="btn btn-outline btn-primary">Provize</button>
+                                                        <button type="button" class="btn btn-outline btn-default">Editovat</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.col-lg-4 -->
+                                        <div class="col-lg-4">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4><i class="fa fa-user fa-fw"></i>Jan Suchý</h4>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p><span>Pozice:</span>Manažer nákupu</p>
+                                                    <p><span>Telefon:</span>+420 554 675 344</p>
+                                                    <p><span>Mobil:</span>+420 605 867 235</p>
+                                                    <p><span>Fax:</span>+420 554 675 344</p>
+                                                    <p><span>Email:</span><a href="mailto:jan@suchy.cz">jan@suchy.cz</a></p>
+                                                    <p><span>B.ú.:</span> 492560267/0100</p>
+                                                    <p><span>Provize celkem:</span> 400,- Kč</p>
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <p>
+                                                        <button type="button" class="btn btn-outline btn-primary">Provize</button>
+                                                        <button type="button" class="btn btn-outline btn-default">Editovat</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.col-lg-4 -->
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="messages">
+                                    <h4><i class="fa fa-comments fa-fw fa-tabs"></i>Historie komunikace</h4>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <!-- Button trigger modal -->
+                                            <button class="btn btn-primary btn-outline" data-toggle="modal" data-target="#myHistory">
+                                               Nový záznam
+                                            </button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myHistory" tabindex="-1" role="dialog" aria-labelledby="history" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4 class="modal-title" id="history">Nový záznam</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                                    <form role="form">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12">
+                                                                                <div class="form-group">
+                                                                                    <input class="form-control" placeholder="Titulek (nevyplníte-li, bude vyplněn automaticky)">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12">
+                                                                                <div class="form-group">
+                                                                                    <input class="form-control" placeholder="Poznámka">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-4">
+                                                                                <div class="form-group input-group">
+                                                                                    <span class="input-group-addon"><i class="fa  fa-calendar"></i></span>
+                                                                                    <input type="text" class="form-control" placeholder="Čas upozornění">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4">
+                                                                                <div class="form-group">
+                                                                                    <select class="form-control">
+                                                                                        <option>-- vyberte typ --</option>
+                                                                                        <option>Plánovaný kontakt</option>
+                                                                                        <option>Servis</option>
+                                                                                        <option>Poptávka</option>
+                                                                                        <option>5</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4">
+                                                                                <div class="form-group input-group">
+                                                                                    <div class="checkbox">
+                                                                                        <label>
+                                                                                            <input type="checkbox" value="">Od klienta
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Storno</button>
+                                                            <button type="button" class="btn btn-primary">Uložit změny</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.modal-content -->
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                            <!-- /.modal -->
+                                        </div>
+                                        <!-- /.panel-heading -->
+                                        <div class="panel-body">
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-badge"><i class="fa fa-envelope-o"></i>
+                                                    </div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4 class="timeline-title">Odeslán newsletter</h4>
+                                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 22.5.2015 14:54</small>
+                                                            </p>
+                                                        </div>
+                                                        <div class="timeline-body">
+                                                            <p><i class="fa  fa-envelope-o fa-fw"></i>Newsletter: "název newsletteru"</p>
+                                                            <p><button type="button" class="btn btn-outline btn-default">zobrazit</button></p>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
+                                                    </div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4 class="timeline-title">Poznámka</h4>
+                                                        </div>
+                                                        <div class="timeline-body">
+
+                                                            <p>Poptával několik kusů pianin pro ZUŠ</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-badge warning"><i class="fa fa-dollar"></i>
+                                                    </div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4 class="timeline-title">Poznámka</h4>
+                                                        </div>
+                                                        <div class="timeline-body">
+                                                            <p>Vyplacena provize za prodej pianin 15.000,- Kč</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-badge"><i class="fa  fa-envelope-o"></i>
+                                                    </div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4 class="timeline-title">Odeslán newsletter</h4>
+                                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 12.4.2015 13:22</small>
+                                                            </p>
+                                                        </div>
+                                                        <div class="timeline-body">
+                                                            <p><i class="fa  fa-envelope-o fa-fw"></i>Newsletter: "název newsletteru"</p>
+                                                            <p><button type="button" class="btn btn-outline btn-default">zobrazit</button></p>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <!-- /.panel-body -->
+                                    </div>
+                                    <!-- /.panel -->
+                                </div>
+                                <div class="tab-pane fade" id="instruments">
+                                    <h4><i class="fa fa-music fa-fw fa-tabs"></i>Nástroje</h4>
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+
+                                                <div class="panel-heading">
+                                                    <button type="button" class="btn btn-outline btn-primary">Přidat nástroj</button>
+                                                </div>
+                                                <!-- /.panel-heading --><div class="panel-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>ID</th>
+                                                                <th>Název</th>
+                                                                <th>Typ</th>
+                                                                <th>Cena</th>
+                                                                <th>Datum od</th>
+                                                                <th>Datum do</th>
+                                                                <th>Servis</th>
+                                                                <th>Akce</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>342</td>
+                                                                <td>pianino SCHOLZE 1930</td>
+                                                                <td>prodej</td>
+                                                                <td>49.000,- Kč</td>
+                                                                <td>18.5.2015</td>
+                                                                <td>-</td>
+                                                                <td>5x servis</td>
+                                                                <td><p><button type="button" class="btn btn-outline btn-warning">Naplánovat servis</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>546</td>
+                                                                <td>pianino Petrof</td>
+                                                                <td>pronájem</td>
+                                                                <td>1200,- Kč</td>
+                                                                <td>1.5.2015</td>
+                                                                <td>1.12.2015</td>
+                                                                <td>5x ladění</td>
+                                                                <td><p><button type="button" class="btn btn-outline btn-warning">Naplánovat servis</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>342</td>
+                                                                <td>pianino SCHOLZE 1930</td>
+                                                                <td>prodej</td>
+                                                                <td>49.000,- Kč</td>
+                                                                <td>18.5.2015</td>
+                                                                <td>-</td>
+                                                                <td>5x servis</td>
+                                                                <td><p><button type="button" class="btn btn-outline btn-warning">Naplánovat servis</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- /.table-responsive -->
+                                                </div>
+                                                <!-- /.panel-body -->
+                                            </div>
+                                            <!-- /.panel -->
+                                        </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="contracts">
+                                    <h4><i class="fa fa-file-o fa-fw fa-tabs"></i>Smlouvy</h4>
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-default">
+
+                                            <div class="panel-heading">
+                                                <button type="button" class="btn btn-outline btn-primary">Vygenerovat smlouvu</button>
+                                            </div>
+                                            <!-- /.panel-heading -->
+                                            <div class="panel-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Datum uložení</th>
+                                                            <th>Název dokumentu</th>
+                                                            <th>Akce</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>25.5.2015</td>
+                                                            <td><i class="fa fa-file-o fa-fw"></i> Smlouva o pronájmu pianina SCHOLZE 245/04 </td>
+                                                            <td><p><button type="button" class="btn btn-outline btn-default">Zobrazit</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2.7.2014</td>
+                                                            <td><i class="fa fa-file-o fa-fw"></i> Smlouva o spolupráci </td>
+                                                            <td><p><button type="button" class="btn btn-outline btn-default">Zobrazit</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>22.12.2013</td>
+                                                            <td><i class="fa fa-file-o fa-fw"></i> První smlouva</td>
+                                                            <td><p><button type="button" class="btn btn-outline btn-default">Zobrazit</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- /.table-responsive -->
+                                            </div>
+                                            <!-- /.panel-body -->
+                                        </div>
+                                        <!-- /.panel -->
+                                    </div>
+                                    <p></p>
+                                </div>
+                                <div class="tab-pane fade" id="complaint">
+                                    <h4><i class="fa  fa-exclamation-circle fa-fw fa-tabs"></i>Reklamace</h4>
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-default">
+
+                                            <div class="panel-heading">
+                                                <button type="button" class="btn btn-outline btn-primary">Nový záznam</button>
+                                            </div>
+                                            <!-- /.panel-heading -->
+                                            <div class="panel-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Datum vzniku</th>
+                                                            <th>Důvod reklamace</th>
+                                                            <th>Akce</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>25.5.2015</td>
+                                                            <td><i class="fa fa-file-o fa-fw"></i> Reklamace pianina SCHOLZE 245/04 </td>
+                                                            <td><p><button type="button" class="btn btn-outline btn-default">Zobrazit</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>2.7.2014</td>
+                                                            <td><i class="fa fa-file-o fa-fw"></i>  Reklamace pianina SCHOLZE 245/04 </td>
+                                                            <td><p><button type="button" class="btn btn-outline btn-default">Zobrazit</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>22.12.2013</td>
+                                                            <td><i class="fa fa-file-o fa-fw"></i>  Reklamace pianina SCHOLZE 245/04 </td>
+                                                            <td><p><button type="button" class="btn btn-outline btn-default">Zobrazit</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- /.table-responsive -->
+                                            </div>
+                                            <!-- /.panel-body -->
+                                        </div>
+                                        <!-- /.panel -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="commission">
+                                    <h4><i class="fa  fa-euro fa-fw fa-tabs"></i>Provize</h4>
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <button type="button" class="btn btn-outline btn-primary">Nová provize</button>
+                                            </div>
+                                                <!-- /.panel-heading -->
+                                                <div class="panel-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Datum vzniku</th>
+                                                                <th>Kontaktní osoba</th>
+                                                                <th>Částka</th>
+                                                                <th>Důvod provize</th>
+                                                                <th>Akce</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>25.5.2015</td>
+                                                                <td><a href="proklik-na-detail-kontaktni-osoby">Tomáš Fiala</a></td>
+                                                                <td><i class="fa fa-dollar fa-fw"></i> 1.200,- Kč</td>
+                                                                <td>zprostředkování prodeje</td>
+                                                                <td><p><button type="button" class="btn btn-outline btn-default">Editovat</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>25.5.2015</td>
+                                                                <td><a href="proklik-na-detail-kontaktni-osoby">Jana Malá</a></td>
+                                                                <td><i class="fa fa-dollar fa-fw"></i> 1.200,- Kč</td>
+                                                                <td>zprostředkování prodeje</td>
+                                                                <td><p><button type="button" class="btn btn-outline btn-default">Editovat</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>25.5.2015</td>
+                                                                <td><a href="proklik-na-detail-kontaktni-osoby">Tomáš Fiala</a></td>
+                                                                <td><i class="fa fa-dollar fa-fw"></i> 1.200,- Kč</td>
+                                                                <td>zprostředkování prodeje</td>
+                                                                <td><p><button type="button" class="btn btn-outline btn-default">Editovat</button> <button type="button" class="btn btn-outline btn-danger">Smazat</button></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- /.table-responsive -->
+                                                </div>
+                                                <!-- /.panel-body -->
+                                            </div>
+                                            <!-- /.panel -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab content -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- DateTimePicker -->
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker({
+                locale: 'cs'
+            });
+        });
+    </script>
+
+</body>
+
+</html>

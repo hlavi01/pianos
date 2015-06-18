@@ -1,0 +1,17 @@
+.fa-tabs{
+    color: #000000;
+}
+
+
+.page-header-button {
+    margin: 45px 0 20px;
+}
+
+.tab-content .p-bold p  { font-weight: bold;}
+.tab-content .p-bold p span { display: block; width: 110px; float: left; font-weight: normal}
+
+.fright { float: right;}
+.fleft  { float: left;}
+
+.tright { text-align: right;}
+.tleft  { text-align: left;}
